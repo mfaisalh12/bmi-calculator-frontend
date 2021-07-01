@@ -71,7 +71,7 @@ li > a:hover:after {
 
 /* main */
 main {
-	background: url(/assets/images/bg.svg);
+	background-image: url('../images/bg.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
