@@ -1,0 +1,122 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1em;
+	max-width: 100%;
+}
+
+:root {
+	--pink-color: #fa26a0;
+	--primary-green-color: #05dfd7;
+	--secondary-green-color: #a3f7bf;
+	--bg-color: #ffffff;
+}
+
+.pink {
+	color: var(--pink-color);
+}
+
+.container {
+	padding: 1% 4%;
+}
+
+.mr {
+	margin-right: 3rem;
+}
+
+.ml {
+	margin-left: 3rem;
+}
+
+/* Navbar */
+.logo {
+	margin: 0;
+	font-size: 24px;
+	color: var(--primary-green-color);
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.nav-link {
+	color: #000 !important;
+	font-size: 16px;
+	font-weight: 500;
+}
+ul a:hover {
+	color: var(--primary-green-color) !important;
+}
+
+li > a:after {
+	content: '';
+	display: block;
+	height: 2px;
+	background: var(--primary-green-color);
+	transform: scaleX(0);
+	transition: transform 0.3s;
+}
+
+li > a:hover:after {
+	transform: scalex(1);
+	transition: transform 0.3s;
+}
+
+.active {
+	color: var(--primary-green-color) !important;
+}
+
+/* main */
+main {
+	background: url(/assets/images/bg.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: top;
+}
+
+.title {
+	color: #fff;
+	font-weight: 700;
+	font-size: 2.3em;
+}
+
+.body-title {
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
+.card {
+	padding: 3% 6%;
+	margin: 4% 10% 0;
+}
+
+/* main card */
+.btn-primary {
+	background: var(--primary-green-color) !important;
+	border: none;
+}
+.btn-primary:hover {
+	background: var(--secondary-green-color) !important;
+}
+
+/* Modal */
+.btn-close {
+	background-color: #fff !important;
+	opacity: 0.8;
+}
+.modal-header,
+#submit {
+	color: #ffff;
+	background: var(--pink-color);
+	border: none;
+}
+@media only screen and (max-width: 1024px) {
+	main {
+		background-size: cover;
+	}
+}
