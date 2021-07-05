@@ -69,6 +69,10 @@ li > a:hover:after {
 	color: var(--primary-green-color) !important;
 }
 
+.disable {
+	display: none;
+}
+
 /* main */
 main {
 	background-image: url('../images/bg.svg');
