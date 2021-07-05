@@ -70,7 +70,7 @@ li > a:hover:after {
 }
 
 .disable {
-	display: none;
+	display: none !important;
 }
 
 /* main */
