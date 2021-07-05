@@ -120,3 +120,24 @@ main {
 		background-size: cover;
 	}
 }
+@media only screen and (max-width: 412px) {
+	.logo {
+		font-size: 1em;
+	}
+	.title {
+		font-size: 1.5em;
+	}
+
+	.body-title {
+		font-size: 0.8em;
+	}
+	svg {
+		width: 100%;
+	}
+	.card-body {
+		padding: 6px;
+	}
+	.form-label {
+		font-size: 0.8em;
+	}
+}
